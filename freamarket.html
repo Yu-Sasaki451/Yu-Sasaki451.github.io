@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>フリマアプリ | Portfolio</title>
+    <link rel="stylesheet" href="./css/sanitize.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="linkHome" href="index.html">Top</a>
+      <nav class="headerNav">
+        <a class="headerNavLink" href="#about">about</a>
+        <a class="headerNavLink" href="#skills">skills</a>
+        <a class="headerNavLink" href="#point">point</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="mainTitle">フリマアプリ</h1>
+
+      <section id="about" class="sectionAbout">
+        <h2 class="sectionTitle">about</h2>
+        <p class="nameText">アプリについて</p>
+        <p class="aboutExplain">
+          スクールの卒業課題として、要件定義書、Figmaで共有されたデザインを再現など、実務を想定した形式で作成しました。<br />
+          ログイン認証、メール認証、商品の出品・購入、プロフィールの登録・変更、検索とソート機能、タブ切替機能を実装し、エラーメッセージにはフォームリクエストを使用しました。
+        </p>
+        <p class="githubText">
+          GitHub：
+          <a
+            class="githubLink"
+            href="https://github.com/Yu-Sasaki451/Frea-Market"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Yu-Sasaki451/Frea-Market
+          </a>
+        </p>
+      </section>
+
+      <section id="screenshots" class="sectionScreenshots">
+        <h2 class="sectionTitle">screenshots</h2>
+        <div class="appScreenshotGroup">
+          <h3 class="screenshotTitle">ユーザー画面</h3>
+          <div class="appScreenshotList">
+            <img
+              class="appScreenshot"
+              src="./img/freamarket/ログイン.png"
+              alt="ログイン画面"
+            />
+            <img
+              class="appScreenshot"
+              src="./img/freamarket/会員登録.png"
+              alt="会員登録画面"
+            />
+            <img
+              class="appScreenshot"
+              src="./img/freamarket/メール認証.png"
+              alt="メール認証画面"
+            />
+            <img
+              class="appScreenshot"
+              src="./img/freamarket/商品一覧.png"
+              alt="商品一覧画面"
+            />
+            <img
+            class="appScreenshot"
+            src="./img/freamarket/検索.png"
+            alt="検索機能"
+            />
+            <img
+              class="appScreenshot"
+              src="./img/freamarket/商品詳細.png"
+              alt="商品詳細画面"
+            />
+            <img
+              class="appScreenshot"
+              src="./img/freamarket/購入.png"
+              alt="商品購入画面"
+            />
+            <img
+             class="appScreenshot"
+             src="./img/freamarket/出品1.png"
+             alt="商品出品画面1"
+             />
+            <img
+            class="appScreenshot"
+            src="./img/freamarket/出品2.png"
+            alt="商品出品画面2"
+            />
+            <img
+            class="appScreenshot"
+            src="./img/freamarket/プロフィール設定.png"
+            alt="プロフィール設定画面"
+            />
+          </div>
+        </div>
+
+      <section id="skills" class="sectionSkills">
+        <h2 class="sectionTitle">skills</h2>
+        <div class="skillsBody">
+          <ul class="skillList">
+            <li class="skillItem">HTML</li>
+            <li class="skillItem">CSS</li>
+            <li class="skillItem">PHP</li>
+            <li class="skillItem">Laravel</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="point" class="sectionWork">
+        <h2 class="sectionTitle">point</h2>
+        <div class="workItem">
+          <h3 class="workTitle">工夫した点</h3>
+          <p>商品画像の大きさ、何個表示したら折返しにするのか、スマートフォンのサイズだとどうしたら見やすいかを特に意識しました。</p>
+        </div>
+        <div class="workItem">
+          <h3 class="workTitle">苦労した点</h3>
+          <p>
+            要件定義書に記載のあるテストのコーディングに一番苦労しました。<br>
+            何をテストすれば良いかは理解できるものの、そのためにはどう書けばいいのかが全く分からず、YouTubeの動画を参考し、ネットで調べ、それでも分からない部分や、要件定義と一致しているか不安な箇所はAIを利用して、なんとか書き切ることができました。
+          </p>
+        </div>
+        <div class="workItem">
+          <h3 class="workTitle">今後改善したい点</h3>
+          <p>
+            バックエンド部分ですが、同じような内容の処理を複数コントローラに書いてる部分があり、当時はserviceに切り出すという手法を知らず、切り出すことで可読性の良いコードにしたいと考えております。<br>
+            また、管理者ログインの機能や、カテゴリでの検索・ソート機能を追加し、より実用的なアプリにできればと考えております。
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+html {
+  --color-bg: #ece3d7;
+  --color-text: #453742;
+  --color-muted: #6f6370;
+  --color-accent: #d24f63;
+  --color-accent-dark: #aa3347;
+  --color-border: #b0aba9;
+  --color-chip-bg: #fff3e6;
+  --color-chip-border: #f0c8b8;
+  --color-header-bg:rgb(247, 243, 243);
+
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
