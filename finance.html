@@ -29,8 +29,45 @@
           個人開発の家計簿アプリです。<br />
           日々の生活費の中で、食費と一括りにされつつも、その中には家族の誰かしか飲食しないものが含まれていたり、この費用は誰々、こっちは自分などと分けて計算するのが面倒だったり、それらを解決するアプリを自分で作ってしまおうと考えました。<br />
           具体的には、食費などの各カテゴリの支出登録をする際に、別ユーザーのものがあればその金額を登録することができ、家賃支払いを0.6：0.4の割合にしたいなどあれば、各カテゴリの計算割合を設定できるという仕様です。<br />
-          また、月毎の合計やカテゴリに分けたデータ一覧、グラフなどを実装予定です。
+          月ごとの支出一覧と精算額を確認できるため、立て替えた金額を個別に計算する手間を減らせます。<br />
+          環境構築はLaravel
+          Sailで行いました。その後のコーディングはcodexを使用、挙動をチェックして修正箇所を指摘する形で進めました。
         </p>
+      </section>
+
+      <section id="screenshots" class="sectionScreenshots">
+        <h2 class="sectionTitle">pages</h2>
+        <div class="appScreenshotGroup">
+          <h3 class="screenshotTitle">月別集計・支出一覧</h3>
+          <div class="appScreenshotList">
+            <img
+              class="appScreenshot"
+              src="./img/family-finance/family-finance-01-monthly-settlement.jpg"
+              alt="家計簿アプリの月別集計と精算額画面"
+            />
+          </div>
+        </div>
+
+        <div class="appScreenshotGroup">
+          <h3 class="screenshotTitle">支出・カテゴリ・割合設定</h3>
+          <div class="appScreenshotList">
+            <img
+              class="appScreenshot"
+              src="./img/family-finance/family-finance-02-expense-form.jpg"
+              alt="家計簿アプリの支出登録画面"
+            />
+            <img
+              class="appScreenshot"
+              src="./img/family-finance/family-finance-03-categories.jpg"
+              alt="家計簿アプリのカテゴリ管理画面"
+            />
+            <img
+              class="appScreenshot"
+              src="./img/family-finance/family-finance-04-ratios.jpg"
+              alt="家計簿アプリの負担割合設定画面"
+            />
+          </div>
+        </div>
       </section>
 
       <section id="skills" class="sectionSkills">
@@ -49,15 +86,24 @@
         <h2 class="sectionTitle">point</h2>
         <div class="workItem">
           <h3 class="workTitle">工夫した点</h3>
-          <p>開発途中のため、完成後に記載します。</p>
+          <p>
+            支出の合計だけではなく、個人で負担する金額と共有する金額を分けて登録できるようにしました。<br />
+            また、カテゴリごとに夫婦の負担割合を設定し、実際に支払った金額と本来負担する金額から、月ごとの精算額を自動で確認できるようにしました。
+          </p>
         </div>
         <div class="workItem">
           <h3 class="workTitle">苦労した点</h3>
-          <p>開発途中のため、完成後に記載します。</p>
+          <p>
+            いわゆるバイブコーディングというものを初めてやってみました。<br />
+            指示を出せば簡単にAIがコードを書いてくれるものの、土台がしっかりしていないと意図しないコードを書いたり、DBを書き換えられたりなどがあるということを事前の情報として持っていたため、DBの設計には細心の注意を払いました。
+          </p>
         </div>
         <div class="workItem">
           <h3 class="workTitle">今後改善したい点</h3>
-          <p>開発途中のため、完成後に記載します。</p>
+          <p>
+            支出をカテゴリ別に確認できるグラフや、月ごとの支出額を比較できる機能を追加したいと考えております。<br />
+            また、自分で使ってみて良さそうであればスマホアプリとしてデプロイしたいと思っております。
+          </p>
         </div>
       </section>
     </main>
